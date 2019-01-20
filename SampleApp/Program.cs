@@ -7,9 +7,10 @@ namespace SampleApp
     {
         static void Main(string[] args)
         {
-            BMI b = new BMI(209, 65);
-           var (val,message)= b.Calc();
-            Console.WriteLine($"the BMI Result Is {val} - - {message}");
+            Fitness f = new Fitness();
+
+            var val = f.BMR(102, 80, ActivityStatuse.Hyperactive);
+            Console.WriteLine($"the BMR Result Is {val} ");
             Console.ReadLine();
         }
     }
