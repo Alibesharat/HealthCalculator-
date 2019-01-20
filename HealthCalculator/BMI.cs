@@ -27,8 +27,8 @@ namespace HealthCalculator
             {
                 var result = _weight / (_height * _height);
                 string message = "";
-                if (result < 16.5)
-                    message = "دچار کمبود وزن شدید";
+                if (result > 16.5)
+                    message = "کمبود وزن شدید";
                 else if (result >= 16.15 && result < 18.5)
                     message = "کمبود وزن";
                 else if (result >= 18.5 && result < 25)
