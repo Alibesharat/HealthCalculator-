@@ -11,7 +11,7 @@ namespace HealthCalculator
 
         public BMI(double height,double weight)
         {
-            _height = height;
+            _height = height/100;
             _weight = weight;
         }
 
@@ -25,9 +25,10 @@ namespace HealthCalculator
             }
             else
             {
+                
                 var result = _weight / (_height * _height);
                 string message = "";
-                if (result > 16.5)
+                if (result < 16.5)
                     message = "کمبود وزن شدید";
                 else if (result >= 16.15 && result < 18.5)
                     message = "کمبود وزن";
