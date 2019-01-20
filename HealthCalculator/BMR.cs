@@ -49,7 +49,7 @@ namespace HealthCalculator
                     result = BMiReuslt * 1.2;
                     break;
                 default:
-                    throw new Exception(nameof(activityStatuse) + " Is Not in Valid Range");
+                    throw new Exception("activityStatuse  Is Not in Valid Range");
 
             }
             return result;
