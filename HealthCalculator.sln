@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCalculator", "HealthCalculator\HealthCalculator.csproj", "{13724D0E-CCBF-4751-AB55-11FB6C27D4A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "SampleApp\SampleApp.csproj", "{2E7F2838-F6B2-4BF7-9AE7-61ECC63E7CE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "SampleApp\SampleApp.csproj", "{2E7F2838-F6B2-4BF7-9AE7-61ECC63E7CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCalculator.test", "HealthCalculator.test\HealthCalculator.test.csproj", "{DBF2A152-4364-46CB-9AD4-D1076B1C877E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2E7F2838-F6B2-4BF7-9AE7-61ECC63E7CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E7F2838-F6B2-4BF7-9AE7-61ECC63E7CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E7F2838-F6B2-4BF7-9AE7-61ECC63E7CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF2A152-4364-46CB-9AD4-D1076B1C877E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF2A152-4364-46CB-9AD4-D1076B1C877E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF2A152-4364-46CB-9AD4-D1076B1C877E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF2A152-4364-46CB-9AD4-D1076B1C877E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

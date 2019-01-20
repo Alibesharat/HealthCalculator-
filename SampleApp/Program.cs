@@ -9,8 +9,8 @@ namespace SampleApp
         {
             Fitness f = new Fitness();
 
-            var val = f.BMR(102, 80, ActivityStatuse.Hyperactive);
-            Console.WriteLine($"the BMR Result Is {val} ");
+            var val = f.BMI(192, 92);
+            Console.WriteLine($"the result is : {Math.Round(val.Item1,2)}  ");
             Console.ReadLine();
         }
     }

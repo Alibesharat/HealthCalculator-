@@ -20,6 +20,7 @@ namespace HealthCalculator
         /// <param name="height">قد به سانتی متر</param>
         /// <param name="Weight">وزن به  کیوگرم</param>
         /// <returns></returns>
+       
         public (double, string) BMI(double height,double Weight)
         {
             if (height <= 0 || Weight <= 0)
@@ -28,7 +29,7 @@ namespace HealthCalculator
             }
             else
             {
-
+                height = height / 100;
                 var result = Weight / (height * height);
                 string message = "";
                 if (result < 16.5)
