@@ -16,6 +16,15 @@ namespace HealthCalculator.test
         }
 
 
+        [TestMethod]
+        public void BMRTest()
+        {
+            var BMRResult = fitness.BMR(165, 60, 30, true, ActivityStatuse.none);
+            Assert.AreEqual(1810.8, BMRResult);
+
+        }
+
+
        
     }
 }
