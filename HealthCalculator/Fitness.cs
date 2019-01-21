@@ -55,16 +55,25 @@ namespace HealthCalculator
         /// </summary>
         /// <param name="height">قد به سانتی متر</param>
         /// <param name="Weight">وزن به کیلوگرم</param>
+        /// <param name="age"> سن  </param>
+        /// <param name="gender"> جنسیت  </param>
         /// <param name="activityStatuse">وضعیت فعالیت</param>
         /// <returns></returns>
-        public double BMR(double height, double Weight,ActivityStatuse activityStatuse)
+        public double BMR(double height, double Weight, int age, bool gender, ActivityStatuse activityStatuse)
         {
-            double BMiReuslt = BMI(height,Weight).Item1;
-            if (BMiReuslt == -1)
-            {
-                return -1;
-            }
+
+
+            double BMiReuslt;
             double result;
+            if (gender==false)
+            {
+                BMiReuslt = 655 + (9.6 * Weight) + (1.8 * height) - (4.7 * age);
+            }
+            else
+            {
+                BMiReuslt = 66 + (13.7 * Weight) + (5 * height) - (6.8 * age);
+            }
+
             switch (activityStatuse)
             {
                 case ActivityStatuse.Hyperactive:
