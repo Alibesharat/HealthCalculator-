@@ -104,28 +104,42 @@ namespace HealthCalculator
         /// <param name="height">قد به سانتی متر</param>
         /// <param name="gender">وزن به کیلوگرم</param>
         /// <returns></returns>
-        public double IBW(double height,bool gender)
-        {
-            if (height <= 0)
-            {
-                return -1;
-            }
-            var Inch_height = height / 2.54;
-            double res;
-            switch (gender)
-            {
-                case true:
-                    res = (50 + 2.3) * (Inch_height - 6);
-                    break;
-                case false:
-                    res = (45.5 + 2.3) * (Inch_height - 6);
-                    break;
-                default:
-                    throw new Exception("gender is not valid in range");
-            }
+        //public double IBW(double height,bool gender)
+        //{
+        //    if (height <= 0)
+        //    {
+        //        return -1;
+        //    }
+            
 
-            return res;
-        }
+        //    var Inch_height = height / 2.54;
+        //    double res;
+        //    switch (gender)
+        //    {
+        //        case true:
+        //            var baseHeight = 150;
+        //            var baseWeight = 47.8;
+        //            var yourHeghit =(int) height - baseHeight;
+        //            var diff =(int) yourHeghit / 2.54;
+                    
+        //            var addedWeight = diff * 2.3;
+                   
+        //            res = baseWeight + addedWeight;
+        //            break;
+        //        case false:
+        //            var baseHeight1 = 152.5 / 2.54;
+        //            var diff1 = Inch_height - baseHeight1;
+        //            var news = diff1 * 3;
+        //            var baseWeight1 = 45.5;
+        //            var addedWeight1 = news+baseWeight1;
+        //            res = addedWeight1;
+        //            break;
+        //        default:
+        //            throw new Exception("gender is not valid in range");
+        //    }
+
+        //    return res;
+        //}
 
 
         /// <summary>
