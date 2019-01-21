@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace HealthCalculator
 {
-   public class Fitness
+    public class Fitness
     {
         private const string messageHighRisk = " خطر سلامتی در حد بالا ";
         private const string messageMidiumRisk = " خطر سلامتی در حد متوسط ";
@@ -51,7 +49,6 @@ namespace HealthCalculator
 
             }
         }
-
 
         /// <summary>
         /// محاسبه کاری مورد نیاز
@@ -191,31 +188,31 @@ namespace HealthCalculator
     }
 
 
-    /// <summary>
-    /// وضعیت فعالیت
-    /// </summary>
-    public enum ActivityStatuse
-    {
         /// <summary>
-        /// فعالیت   شدید
+        /// وضعیت فعالیت
         /// </summary>
-        Hyperactive,
-        /// <summary>
-        /// فعالیت زیاد 
-        /// </summary>
-        active,
-        /// <summary>
-        /// فعالیت عادی
-        /// </summary>
-        normal,
-        /// <summary>
-        /// فعالیت پایین
-        /// </summary>
-        low,
-        /// <summary>
-        /// بدون فعالیت
-        /// </summary>
-        none
+        public enum ActivityStatuse
+        {
+            /// <summary>
+            /// فعالیت   شدید
+            /// </summary>
+            Hyperactive,
+            /// <summary>
+            /// فعالیت زیاد 
+            /// </summary>
+            active,
+            /// <summary>
+            /// فعالیت عادی
+            /// </summary>
+            normal,
+            /// <summary>
+            /// فعالیت پایین
+            /// </summary>
+            low,
+            /// <summary>
+            /// بدون فعالیت
+            /// </summary>
+            none
 
-    }
+        }
 }
